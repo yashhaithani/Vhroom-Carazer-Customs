@@ -61,26 +61,18 @@
                 <input type="number" id="totalKilometer" name="totalKilometer" placeholder="Total Kilometer:" required>
                 <input type="text" id="majorAccident" name="majorAccident" placeholder="Any Major Accident:" required>
                 <input type="number" id="desiredPrice" name="desiredPrice" placeholder="Desired Price:" required>
-                <input type="number" id="desiredPrice" name="desiredPrice" placeholder="Contact:" required, min="10" max="10">
+                <input type="number" id="desiredPrice" name="contact" placeholder="Contact:" required>
 
                 <button type="submit" class="submit-button">Submit</button>
             </form>
         </div>
-        <div id="rentForm" class="form-container">
+        <div id="rentForm" class="form-container" style="display: none;">
             <h2>Rent a Car</h2>
             <form id="rentFormFields">
-                <label for="carModel">Car Model:</label>
-                <input type="text" id="carModel" name="carModel" required>
-    
-                <label for="totalKilometer">Total Kilometer:</label>
-                <input type="number" id="totalKilometer" name="totalKilometer" required>
-    
-                <label for="desiredPrice">Desired Rent Price:</label>
-                <input type="number" id="desiredPrice" name="desiredPrice" required>
-                
-                <label for="phoneNumber">Contact:</label>
-                <input type="number" id="phoneNumber" name="phoneNumber" required min="1000000000" max="9999999999">
-    
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="number" id="numOfPeople" name="numOfPeople" placeholder="How many Ocupent?" required, min="1", max="7">
+                <input type="number" id="contact" name="contact" placeholder="Contact Number" required, min="10", max="10">
+                <input type="text" id="duration" name="duration"placeholder="Duration of rent" required min="1" max="30">
                 <button type="submit" class="submit-button">Submit</button>
             </form>
         </div>
