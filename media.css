@@ -1,0 +1,122 @@
+/* Media Query for Mobile */
+@media (min-width: 1000px) 
+{
+    .navbarMobile {
+        display: none;
+    }
+}
+@media (max-width: 1000px) {
+    .navbar {
+        display: none; /* Hide desktop navbar */
+    }
+
+    .navbarMobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #000000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo img {
+        height: 50px; /* Adjust logo size for mobile */
+    }
+
+    .toggle-container {
+        display: flex;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon */
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .line {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        background-color: #126b2a;
+        margin: 5px 0;
+        transition: transform 0.4s ease;
+        z-index: 1;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 60px;
+        right: -250px; /* Initially hidden */
+        width: 250px;
+        height: 51%;
+        background-color: #424242a3;
+        border-radius: 20px;
+        transition: right 1s ease;
+        padding-top: 80px;
+    }
+
+    .sidebar.open {
+        right: 0; /* Slide in when open */
+        z-index: 1;
+    }
+
+    .nav-linksMobile {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .nav-linksMobile li {
+        margin-bottom: 15px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+    .nav-linksMobile li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        padding: 20px;
+        transition: all 1s ease-in-out;
+    }
+    .nav-linksMobile li a:hover{
+        background-color: #4c4c4c;
+        border-radius: 15px;
+    }
+
+    /* Animation for hamburger icon */
+    .line.active1 {
+        transform: translateY(8px) rotate(45deg);
+        z-index: 1;
+    }
+
+    .line.active2 {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    .line.active3 {
+        transform: translateY(-8px) rotate(-45deg);
+        z-index: 1;
+    }
+    .dot{
+        display: none;
+    }
+    .down{
+        display: none;
+    }
+
+    .mapDetails{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .address{
+        font-size: large;
+        font-weight: 900;
+        margin-left: -120px;
+    }
+}

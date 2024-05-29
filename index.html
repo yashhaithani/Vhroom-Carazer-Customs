@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vhroom Vhrooom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="preRequisite.css">
+    <link rel="shortcut icon" href="Img/Favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Preloader Screen -->
+    <div class="preloader">
+        <img src="Img/CarPreloader.gif" alt="Loading...">
+    </div>
+    <!-- <div class="scroll-watcher"></div> -->
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Img/AITHANI.png" alt="Logo">
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="Custamize\Custamize.html">Custamize</a></li>
+            <li><a href="BuySellRent\BuySellRent.html">Buy/Sell/Rent</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Location</a></li>
+        </ul>
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </nav>
+
+    <!-- Navigation Bar for Mobile-->
+    <nav class="navbarMobile">
+        <div class="logo">
+            <img src="Img/AITHANI.png" alt="Logo">
+        </div>
+        <div class="toggle-container">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul class="nav-linksMobile">
+                <li><a href="Custamize\Custamize.html">&nbsp;&nbsp; Custamize &nbsp;&nbsp;</a></li>
+                <li><a href="BuySellRent\BuySellRent.html"> Buy/Sell/Rent </a></li>
+                <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp; Contact &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp; Location &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Image Slider -->
+    <div class="slider-container">
+        <div class="slide"><img src="Img/Car1.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="Img/Car2.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src="Img/Car3.jpg" alt="Slide 3"></div>
+        <div class="slide"><img src="Img/Car4.jpg" alt="Slide 4"></div>
+        <div class="slide"><img src="Img/Car5.jpg" alt="Slide 5"></div>
+        <div class="slide"><img src="Img/Car6.jpg" alt="Slide 6"></div>
+        <div class="slide"><img src="Img/Car7.jpg" alt="Slide 7"></div>
+        <div class="slide"><img src="Img/Car8.jpg" alt="Slide 8"></div>
+        <div class="slide"><img src="Img/Car9.jpg" alt="Slide 9"></div>
+
+        <!-- Previous and Next buttons -->
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+
+        <!-- Image number dots -->
+        <div style="text-align:center" class="dotPosition">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+        </div>
+    </div>
+    <div class="mapDetails">
+        <img src="Img/Map.png" alt="" class="map">
+        <address class="address"> -Auto Haven- <br> Henderson Road <br>adjacent <br>Hotel Harrison, Losantos <br>1-999-228-2463</address>
+    </div>
+
+    <footer>
+        <p>E-mail: &nbsp;&nbsp;auto_haven@gmail.com</p>
+        <p>Phone Number:&nbsp;&nbsp;1-999-228-2463</p>
+        <br>
+        <hr>
+        <br>
+        <p>|| Thanks for Visiting ||</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
