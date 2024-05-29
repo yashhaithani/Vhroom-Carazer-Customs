@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huracán EVO - Colors</title>
+    <style>
+        body{
+            align-items: center;
+            text-align: center;
+        }
+        h1{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 3rem;
+            text-align: center;
+        }
+        .color-button-container {
+            display: inline-block;
+            margin: 10px;
+            width: 107px;
+            text-align: center;
+        }
+        .color-button {
+            padding: 10px;
+            height: 47px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .color-button img {
+            width: 100px;
+            height: auto;
+            display: block;
+        }
+        .slider {
+            position: relative;
+            width: 500px;
+            height: auto;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .slider img {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+        .slider img.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function showColorImage(index) {
+            const images = document.querySelectorAll('.slider img');
+            images.forEach((img, i) => {
+                img.classList.toggle('active', i === index);
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Huracán EVO <br>- Choose Your Color - </h1>
+    
+    <div class="slider">
+        <img src="Custamize-img/huracanevobiancomonocerus.jpg" alt="Huracán EVO Bianco Monocerus" class="active">
+        <img src="Custamize-img/huracanevogiallointi.jpg" alt="Huracán EVO Giallo Inti">
+        <img src="Custamize-img/huracanevoneronemesis.jpg" alt="Huracán EVO Nero Nemesis">
+        <img src="Custamize-img/huracanevorossomars.jpg" alt="Huracán EVO Rosso Mars">
+        <img src="Custamize-img/huracanevoverdemantis.jpg" alt="Huracán EVO Verde Mantis">
+    </div>
+    
+    <div class="color-button-container">
+        <div class="color-button" style="background-color: #c6ccc5; border: 1px black solid;" onclick="showColorImage(0)"></div>
+        <p>Bico Mocrus</p>
+    </div>
+    <div class="color-button-container">
+        <div class="color-button" style="background-color: #FED136; border: 1px black solid;" onclick="showColorImage(1)"></div>
+        <p>Giallo Inti</p>
+    </div>
+    <div class="color-button-container">
+        <div class="color-button" style="background-color: #312F30; border: 1px black solid;" onclick="showColorImage(2)"></div>
+        <p>Nero Nemesis</p>
+    </div>
+    <div class="color-button-container">
+        <div class="color-button" style="background-color: #D40000; border: 1px black solid;" onclick="showColorImage(3)"></div>
+        <p>Rosso Mars</p>
+    </div>
+    <div class="color-button-container">
+        <div class="color-button" style="background-color:  #74c365; border: 1px black solid;" onclick="showColorImage(4)"></div>
+        <p>Verde Mantis</p>
+    </div>
+</body>
+</html>

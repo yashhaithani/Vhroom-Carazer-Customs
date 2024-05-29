@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Garage</title>
+    <link rel="stylesheet" href="CustamizeNavBar.css">
+    <link rel="shortcut icon" href="Custamize-img/Favicon.png" type="image/x-icon">
+    <style>
+        body{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
+            background-image: url('Custamize-img/BGCustamize.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed
+        }
+        /* Preloader styles */
+        .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        }
+
+        /* Styling for the preloader image */
+        .preloader img {
+        width: 400px; /* Adjust width as needed */
+        height: 400px; /* Adjust height as needed */
+        animation: spin 3s linear infinite;
+        }
+        .car-button p{
+            text-decoration: none;
+        }
+        .car-button {
+            display: inline-block;
+            background-color: rgba(61, 90, 90, 0.385);
+            width: 200px;
+            height: 160px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid #126b2abd;
+            border-radius: 5px;
+            
+        }
+        .car-button img {
+            width: 200px;
+            height: auto;
+            display: block;
+        }
+        .car-button a {
+            text-decoration: none;
+        }
+        .car-button a p {
+            text-decoration:wavy;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;;
+            margin: 10px 0;
+        }
+        :-webkit-scrollbar {
+             width: 10px;
+        }
+  
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px rgb(0, 0, 0); 
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #126b2abd; 
+            border-radius: 10px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #06551b; 
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader Screen -->
+    <div class="preloader">
+        <img src="Custamize-img/CarPreloader.gif" alt="Loading...">
+    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Custamize-img/AITHANI.png" alt="Logo">
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="Custamize\Custamize.html">Custamize</a></li>
+            <li><a href="BuySellRent\BuySellRent.html">Buy/Sell/Rent</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Location</a></li>
+        </ul>
+    </nav>
+
+    <!-- Navigation Bar for Mobile-->
+    <nav class="navbarMobile">
+        <div class="logo">
+            <img src="Custamize-img/AITHANI.png" alt="Logo">
+        </div>
+        <div class="toggle-container">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul class="nav-linksMobile">
+                 <li><a href="Custamize\Custamize.html">Custamize</a></li>
+                <li><a href="BuySellRent\BuySellRent.html">Buy/Sell/Rent</a></li>
+                <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp; Contact &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp; Location &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Welcome to Our Car Garage</h1>
+    <br>
+    <div class="car-button">
+        <a href="huracan-evo.html">
+            <img src="Custamize-img/huracanevoverdemantis.jpg" alt="Huracán EVO">
+            <p>Lamborghini Huracán</p>
+        </a>
+    </div>
+    <div class="car-button">
+        <a href="range-rover-sport.html">
+            <img src="Custamize-img/rangeroversportsantoriniblack.jpg" alt="Range Rover Sport">
+            <p>Range Rover Sport</p>
+        </a>
+    </div>
+    <div class="car-button">
+        <a href="mustang.html">
+            <img src="Custamize-img/mustangabsoluteblack.jpg" alt="Ford Mustang">
+            <p>Ford Mustang GT</p>
+        </a>
+    </div>
+
+    <script src="CustamizeNavBar.js"></script>
+</body>
+</html>
